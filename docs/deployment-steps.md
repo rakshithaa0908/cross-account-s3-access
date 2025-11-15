@@ -34,7 +34,7 @@ JSON Example:
     }
   ]
 }
-
+```
 Or via Service: STS → All actions (sts:*) → Resources: All → Policy name: stspolicy
 
 ### 4. Switch Role and Access Bucket
