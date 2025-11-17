@@ -1,4 +1,4 @@
-# Cross Account Access of S3 Objects Using IAM Role
+# Cross Account Access Using IAM Role
 
 Enable cross-account access to an S3 bucket using AWS Identity and Access Management (IAM) roles. This guide covers authentication, authorization, IAM users vs roles, and step-by-step deployment.
 
@@ -39,25 +39,25 @@ See full deployment instructions [here](docs/deployment-steps.md).
 
 ## Project Structure
 ```
-cross-account-s3-access/
+cross-account-access/
 │
 ├── docs/
 │ ├── deployment-steps.md 
 │ └── screenshots/
-│ 	├── cross_account_s3_access.png # Screenshot of cross-account access
+│ 	├── cross_account_access.png # Screenshot of cross-account access
 │ 	└── cross_account_architecture.png # Architecture diagram
 ├── README.md 
 └── LICENSE 
 ```
 ## Architecture Diagram
 
-**Cross Account S3 Access Architecture**  
-![Cross Account S3 Architecture](docs/screenshots/cross_account_architecture.png)
+**Cross Account Access Architecture**  
+![Cross Account Architecture](docs/screenshots/cross_account_architecture.png)
 
 ## Screenshots
 
-**Cross Account Access of S3 Using IAM Role**  
-![Cross Account S3 Access](docs/screenshots/cross_account_s3_access.png)
+**Cross Account Access Using IAM Role**  
+![Cross Account Access](docs/screenshots/cross_account_access.png)
 
 ## License
 

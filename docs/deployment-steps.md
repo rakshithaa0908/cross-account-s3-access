@@ -1,4 +1,4 @@
-# Deployment Steps – Cross Account S3 Access
+# Deployment Steps – Cross Account Access
 
 This guide shows how to enable cross-account access to an S3 bucket using an IAM role.
 
@@ -19,7 +19,7 @@ This guide shows how to enable cross-account access to an S3 bucket using an IAM
 3. IAM → Roles → Create role  
    - Trusted entity: AWS Account → Another AWS Account → Dev Account ID  
    - Permissions: AmazonS3FullAccess  
-   - Role name: `crossaccounts3access`
+   - Role name: `crossaccountaccess`
 
 ### 3. Dev Account – Attach Inline Policy to Alice
 JSON Example:
@@ -30,7 +30,7 @@ JSON Example:
     {
       "Effect": "Allow",
       "Action": "sts:AssumeRole",
-      "Resource": "arn:aws:iam::PROD_ACCOUNT_ID:role/crossaccounts3access"
+      "Resource": "arn:aws:iam::PROD_ACCOUNT_ID:role/crossaccountaccess"
     }
   ]
 }
@@ -39,6 +39,6 @@ Or via Service: STS → All actions (sts:*) → Resources: All → Policy name: 
 
 ### 4. Switch Role and Access Bucket
 Log in as Alice (Incognito)
-Switch role: Prod Account ID → Role: crossaccounts3access → Display name: crossaccounts3access@123
+Switch role: Prod Account ID → Role: crossaccountaccess → Display name: crossaccountaccess@123
 Access bucket and objects successfully
 
