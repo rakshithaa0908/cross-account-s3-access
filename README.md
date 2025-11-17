@@ -44,8 +44,8 @@ cross-account-s3-access/
 ├── docs/
 │ ├── deployment-steps.md 
 │ └── screenshots/
-│ ├── cross_account_s3_access.png # Screenshot of cross-account access
-│ └── cross_account_architecture.png # Architecture diagram
+│ 	├── cross_account_s3_access.png # Screenshot of cross-account access
+│ 	└── cross_account_architecture.png # Architecture diagram
 ├── README.md 
 └── LICENSE 
 ```
