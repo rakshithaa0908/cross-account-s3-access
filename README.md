@@ -1,4 +1,4 @@
-# Cross Account Access Using IAM Role
+# Cross Account Access using IAM Role
 
 Enable cross-account access to an S3 bucket using AWS Identity and Access Management (IAM) roles. This guide covers authentication, authorization, IAM users vs roles, and step-by-step deployment.
 
